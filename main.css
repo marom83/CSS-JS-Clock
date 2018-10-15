@@ -29,8 +29,18 @@ body{
     0 0 10px rgba(0,0,0,0.2);
 }
 
+.clock-face{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: absolute;
+    top: 50%;
+}
+
 element.style{
-    transform: rotate(330deg)
+    transform: rotate(20deg);
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1)
 }
 .hand{
     width: 50%;
@@ -38,4 +48,7 @@ element.style{
     background: black;
     position: absolute;
     top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s; 
 }
